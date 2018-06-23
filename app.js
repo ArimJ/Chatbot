@@ -18,7 +18,7 @@ app.get('/keyboard', function(req, res) {
     
   var data = {
     'type': 'buttons',
-    'buttons': ['입금', '출금', '로그인', '인증', '먼지', '바이낸스야']
+    'buttons': ['입금', '출금', '로그인', '인증', '먼지', '상장', '입/출금지연', '2단계 인증(2FA/OTP)', '바이낸스야']
   };
   res.json(data);
 
@@ -108,6 +108,8 @@ app.post('/message', function(req, res) {
         }
 
       }
+          
+
       break;        
     case '바이낸스야':
       send = {
