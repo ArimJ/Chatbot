@@ -28,7 +28,7 @@ http.createServer(app).listen(9090, function() {
   console.log('서버 실행 중..');
 });
 
-// http://118.32.179.150/message
+// http://ip/message
 app.post('/message', function(req, res) {
     //user input data 
   var msg = req.body.content;
